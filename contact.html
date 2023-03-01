@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Web de Leila Dufour</title>
+  </head>
   <body>
     <!-- Header -->
     <header style="text-align: center">
@@ -29,25 +30,38 @@
       </section>
     </nav>
 
-
     <!-- Main -->
     <main
-      style="background-color: rgb(31, 31, 31); color: white; padding: 20px; text-align: center"
+      style="
+        background-color: rgb(31, 31, 31);
+        color: white;
+        padding: 20px;
+        text-align: center;
+      "
     >
-    <h2>Hello World!</h2>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,<br>
-      delectus porro aut, itaque odit eius autem architecto esse, tenetur<br>
-      qui dolores saepe officia illum veniam. Vel accusantium laborum<br>
-      repellendus eius! Lorem ipsum dolor sit amet consectetur adipisicing<br>
-      elit. Dicta inventore quia a ratione alias quam, aperiam sed aliquam<br>
-      enim veniam mollitia ad debitis recusandae cupiditate. Aliquid veniam<br>
-      libero est similique?Lorem ipsum dolor sit amet, consectetur<br>
-      adipisicing elit. Fuga dolore in recusandae ipsa totam eaque modi eum<br>
-      odit, velit maxime saepe numquam, dolorem accusantium cupiditate<br>
-      repudiandae. Non vel asperiores beatae! <br /><br />
-    </p>
-  </main>
+      <h2>Contactez moi</h2>
+      <form>
+        <label for="prenom">Prénom</label><br />
+        <input type="text" id="prenom" name="prenom" /><br />
+        <br />
+        <label for="nomf">Nom de famille</label><br />
+        <input type="text" id="nomf" name="nomf" /><br />
+        <br />
+        <label for="phone">Numéro de téléphone</label><br />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        /><br /><br />
+        <label for="prenom">Adresse email</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <br />
+        <input type="submit" value="Submit" /><br />
+        <br /><br />
+        <!-- Pour mettre de l'espace en dessous, jsp encore comment bien faire les margins-->
+      </form>
+    </main>
 
     <!-- Footer -->
     <footer style="text-align: right">
