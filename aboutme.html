@@ -4,123 +4,84 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Portfolio Web de Leila Dufour</title>
   </head>
   <body>
-    <!-- Header -->
-    <header style="text-align: center">
-      <h1>Portfolio Web</h1>
-      <h2>Leila Dufour</h2>
-    </header>
+    <section class="sidebar">
+      <!-- Header & nav -->
+      <header>
+        <h1>Portfolio Web</h1>
+        <h2>Leila Dufour</h2>
+      </header>
 
-    <!-- Navigation -->
-    <nav
-      style="
-        text-align: center;
-        background-color: rgb(209, 209, 209);
-        padding-bottom: 12px;
-      "
-    >
-      <section>
-        <hr />
-        <a href="index.html">Home</a> |
-        <a href="aboutme.html">À propos de moi</a> |
-        <a href="projects.html">Mes projets</a> |
-        <a href="contact.html">Contact</a>
-      </section>
+      <!-- Navigation -->
+      <nav class="mainnav">
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="#">À propos de moi</a></li>
+        <nav class="subnav">
+          <li><a href="aboutme.html#intro">Introduction</a></li>
+          <li>
+            <a href="aboutme.html#competences">Compétences professionnelles</a>
+          </li>
+          <li><a href="aboutme.html#parcours">Mon parcours</a></li>
+        </nav>
 
-      <section>
-        <hr />
-        <a href="aboutme.html#intro">Introduction</a> |
-        <a href="aboutme.html#competences">Compétences</a> |
-        <a href="aboutme.html#parcours">Parcours</a>
-      </section>
-    </nav>
+        <li><a href="projects.html">Mes projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </nav>
+    </section>
 
     <!-- Main -->
-    <main
-      style="background-color: rgb(31, 31, 31); color: white; padding: 20px"
-    >
-      <section style="text-align: center">
-        <h2 id="intro">Introduction</h2>
-        <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
-        <p>Tech en informatique</p>
-        <br><br><br>
-        <hr />
-      </section>
+    <section class="main-space">
+      <section class="main-box">
+        <main>
+          <section id="intro">
+            <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
+            <h2>Titre professionnel</h2>
+            <hr />
+          </section>
 
-      <section>
-        <h2 id="competences">Mes compétences professionnelles</h2>
-        <p>
-          <ul>
-            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic repudiandae dolorum veritatis, nulla illo, dolores animi consequuntur non qui vitae accusantium dignissimos deleniti quo doloribus earum! Amet ducimus minus molestias!</li>
-          </ul>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-          delectus porro aut, itaque odit eius autem architecto esse, tenetur
-          qui dolores saepe officia illum veniam. Vel accusantium laborum
-          repellendus eius! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dicta inventore quia a ratione alias quam, aperiam sed aliquam
-          enim veniam mollitia ad debitis recusandae cupiditate. Aliquid veniam
-          libero est similique?Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Fuga dolore in recusandae ipsa totam eaque modi eum
-          odit, velit maxime saepe numquam, dolorem accusantium cupiditate
-          repudiandae. Non vel asperiores beatae! <br /><br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a quod
-          repellendus dolore beatae! Asperiores tempore similique minima ducimus
-          numquam earum iste facilis quidem voluptatibus, doloremque tenetur
-          excepturi saepe nam! Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. At ipsa voluptatem beatae, placeat ratione
-          consectetur dolores eligendi sequi iure perspiciatis necessitatibus
-          atque, temporibus voluptate libero architecto quam nemo aspernatur
-          iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-          delectus, ipsam aliquid quia, eligendi esse ad, laboriosam culpa vel
-          itaque alias ratione officiis atque a dolores veritatis consequuntur
-          cumque inventore.<br />
-        </p>
-        <br><br><br>
-        <hr />
-      </section>
+          <section id="competences">
+            <h2>Compétences professionnelles</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perspiciatis distinctio quam assumenda sed quae dolor officiis a
+              sunt id totam facilis nesciunt laborum repellendus eos iure
+              beatae, consequatur dolores consequuntur?
+            </p>
+          </section>
 
-      <section>
-        <h2 id="parcours">Mon parcours</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-          delectus porro aut, itaque odit eius autem architecto esse, tenetur
-          qui dolores saepe officia illum veniam. Vel accusantium laborum
-          repellendus eius! Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Dicta inventore quia a ratione alias quam, aperiam sed aliquam
-          enim veniam mollitia ad debitis recusandae cupiditate. Aliquid veniam
-          libero est similique?Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. Fuga dolore in recusandae ipsa totam eaque modi eum
-          odit, velit maxime saepe numquam, dolorem accusantium cupiditate
-          repudiandae. Non vel asperiores beatae! <br /><br />
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi a quod
-          repellendus dolore beatae! Asperiores tempore similique minima ducimus
-          numquam earum iste facilis quidem voluptatibus, doloremque tenetur
-          excepturi saepe nam! Lorem ipsum dolor sit amet, consectetur
-          adipisicing elit. At ipsa voluptatem beatae, placeat ratione
-          consectetur dolores eligendi sequi iure perspiciatis necessitatibus
-          atque, temporibus voluptate libero architecto quam nemo aspernatur
-          iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. In
-          delectus, ipsam aliquid quia, eligendi esse ad, laboriosam culpa vel
-          itaque alias ratione officiis atque a dolores veritatis consequuntur
-          cumque inventore.<br />
-        </p>
-        <br><br><br>
+          <section id="parcours">
+            <h2>Mon parcours</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
+              similique recusandae eius aspernatur rem ex ipsa vero fuga. Veniam
+              earum dolor quibusdam similique impedit provident quos numquam
+              odio recusandae nemo?<br />
+            </p>
+          </section>
+        </main>
+        <!-- Footer -->
+        <footer>
+          <hr />
+          <p>© 2023 Leila Dufour. All rights reserved.</p>
+        </footer>
       </section>
-    </main>
+    </section>
 
-    <!-- Footer -->
-    <footer style="text-align: center">
-      <hr />
-      <p>
-        <a href="j'enaipas">LinkedIn</a> |
-        <a href="https://github.com/leiduf/">Github</a> |
-        <a href="insta">Instagram</a> |
-        <a href="twitter">Twitter</a> |
-        <a href="facebook">Facebook</a>
-      </p>
-      <p>© 2023 Leila Dufour. All rights reserved.</p>
-    </footer>
+    <section class="socials">
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="https://github.com/leiduf/" class="fa fa-github"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-facebook"></a>
+    </section>
   </body>
 </html>

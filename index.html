@@ -4,62 +4,64 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
     <title>Portfolio Web de Leila Dufour</title>
+  </head>
   <body>
-    <!-- Header -->
-    <header style="text-align: center">
-      <h1>Portfolio Web</h1>
-      <h2>Leila Dufour</h2>
-    </header>
+    <section class="sidebar">
+      <!-- Header & nav -->
+      <header>
+        <h1>Portfolio Web</h1>
+        <h2>Leila Dufour</h2>
+      </header>
 
-    <!-- Navigation -->
-    <nav
-      style="
-        text-align: center;
-        background-color: rgb(209, 209, 209);
-        padding-bottom: 12px;
-      "
-    >
-      <section>
-        <hr />
-        <a href="index.html">Home</a> |
-        <a href="aboutme.html">À propos de moi</a> |
-        <a href="projects.html">Mes projets</a> |
-        <a href="contact.html">Contact</a>
-      </section>
-    </nav>
-
+      <!-- Navigation -->
+      <nav class="mainnav">
+        <li class="current"><a href="#">Home</a></li>
+        <li><a href="aboutme.html">À propos de moi</a></li>
+        <li><a href="projects.html">Mes projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </nav>
+    </section>
 
     <!-- Main -->
-    <main
-      style="background-color: rgb(31, 31, 31); color: white; padding: 20px; text-align: center"
-    >
-    <h2>Hello World!</h2>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,<br>
-      delectus porro aut, itaque odit eius autem architecto esse, tenetur<br>
-      qui dolores saepe officia illum veniam. Vel accusantium laborum<br>
-      repellendus eius! Lorem ipsum dolor sit amet consectetur adipisicing<br>
-      elit. Dicta inventore quia a ratione alias quam, aperiam sed aliquam<br>
-      enim veniam mollitia ad debitis recusandae cupiditate. Aliquid veniam<br>
-      libero est similique?Lorem ipsum dolor sit amet, consectetur<br>
-      adipisicing elit. Fuga dolore in recusandae ipsa totam eaque modi eum<br>
-      odit, velit maxime saepe numquam, dolorem accusantium cupiditate<br>
-      repudiandae. Non vel asperiores beatae! <br /><br />
-    </p>
-  </main>
+    <section class="main-space">
+      <section class="main-box">
+        <main>
+          <h2>Hello World!</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+            delectus porro aut, itaque odit eius autem architecto esse, tenetur
+            qui dolores saepe officia illum veniam. Vel accusantium laborum
+            repellendus eius! Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Dicta inventore quia a ratione alias quam, aperiam sed aliquam
+            enim veniam mollitia ad debitis recusandae cupiditate. Aliquid
+            veniam libero est similique?Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Fuga dolore in recusandae ipsa totam eaque modi
+            eum odit, velit maxime saepe numquam, dolorem accusantium cupiditate
+            repudiandae. Non vel asperiores beatae!
+          </p>
+        </main>
+        <!-- Footer -->
+        <footer>
+          <hr />
+          <p>© 2023 Leila Dufour. All rights reserved.</p>
+        </footer>
+      </section>
+    </section>
 
-    <!-- Footer -->
-    <footer style="text-align: center">
-      <hr />
-      <p>
-        <a href="j'enaipas">LinkedIn</a> |
-        <a href="https://github.com/leiduf/">Github</a> |
-        <a href="insta">Instagram</a> |
-        <a href="twitter">Twitter</a> |
-        <a href="facebook">Facebook</a>
-      </p>
-      <p>© 2023 Leila Dufour. All rights reserved.</p>
-    </footer>
+    <section class="socials">
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="https://github.com/leiduf/" class="fa fa-github"></a>
+      <a href="#" class="fa fa-instagram"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-facebook"></a>
+    </section>
   </body>
 </html>
