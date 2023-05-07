@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/style/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Portfolio Web de Leila Dufour</title>
+  </head>
+  <body>
+    <header>
+      <div class="title">
+        <div>
+          <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
+          <h2>Tech. en informatique</h2>
+        </div>
+      </div>
+      <div class="contact">
+        <ul>
+          <li>
+            <a href="#" target="_blank" class="fa fa-linkedin"></a> @leiduf
+          </li>
+          <li>
+            <a
+              href="https://github.com/leiduf/"
+              target="_blank"
+              class="fa fa-github"
+            ></a>
+            @leiduf
+          </li>
+          <li>
+            <a href="#" target="_blank" class="fa fa-instagram"></a> @leiduf
+          </li>
+          <li>
+            <a href="#" target="_blank" class="fa fa-twitter"></a> @leiduf
+          </li>
+          <li>
+            <a href="#" target="_blank" class="fa fa-facebook"></a> @leiduf
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="aboutme.html">À propos de moi</a></li>
+        <li><a href="projects.html">Mes projets</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div>
+        <div>
+          <h2>Contactez moi</h2>
+
+          <label for="prenom">Prénom</label><br />
+          <input type="text" id="prenom" name="prenom" /><br />
+          <br />
+          <label for="nomf">Nom de famille</label><br />
+          <input type="text" id="nomf" name="nomf" /><br />
+          <br />
+          <label for="phone">Numéro de téléphone</label><br />
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          /><br /><br />
+          <label for="prenom">Adresse email</label><br />
+          <input type="email" id="email" name="email" /><br />
+          <br />
+          <input type="submit" value="Submit" /><br />
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <hr />
+      <p>© 2023 Leila Dufour. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
