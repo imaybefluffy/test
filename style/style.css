@@ -212,7 +212,7 @@ main {
   overflow: auto;
 }
 
-.project {
+.box {
   justify-content: flex-start;
 }
 
@@ -231,18 +231,18 @@ main > div {
   box-shadow: 0 2.5vh var(--light-lavender);
 }
 
-.project-top {
+.box-top {
   margin-top: 5rem;
   background-color: var(--off-white-color);
   border-radius: 1rem 1rem 0 0;
 }
 
-.project-middle {
+.box-middle {
   background-color: var(--light-turquoise);
   border-radius: 0;
 }
 
-.project-bottom {
+.box-bottom {
   margin-bottom: 5rem;
   color: var(--main-turquoise);
   background-color: var(--light-color-bg);
