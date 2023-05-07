@@ -1,7 +1,7 @@
 @font-face {
   font-family: "jelleeroman";
-  src: url("/fonts/jellee-roman-webfont.woff2") format("woff2"),
-    url("/fonts/jellee-roman-webfont.woff") format("woff");
+  src: url("../fonts/jellee-roman-webfont.woff2") format("woff2"),
+    url("../fonts/jellee-roman-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -89,7 +89,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-
+/*title*/
 header > div {
   background-color: var(--light-color-bg);
   color: var(--main-turquoise);
