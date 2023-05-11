@@ -52,7 +52,7 @@
         <li><a href="index.html">Accueil</a></li>
         <li><a href="aboutme.html">À propos de moi</a></li>
         <li><a href="projects.html">Mes projets</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a class="active-page" href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -60,24 +60,17 @@
       <div>
         <div>
           <h2>Contactez moi</h2>
-
-          <label for="prenom">Prénom</label><br />
-          <input type="text" id="prenom" name="prenom" /><br />
-          <br />
-          <label for="nomf">Nom de famille</label><br />
-          <input type="text" id="nomf" name="nomf" /><br />
-          <br />
-          <label for="phone">Numéro de téléphone</label><br />
+          <input type="text" id="surname" placeholder="Prénom" />
+          <input type="text" id="name" placeholder="Nom de famille" />
+          <input type="email" id="email" placeholder="Adresse email" />
           <input
             type="tel"
-            id="phone"
-            name="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-          /><br /><br />
-          <label for="prenom">Adresse email</label><br />
-          <input type="email" id="email" name="email" /><br />
-          <br />
-          <input type="submit" value="Submit" /><br />
+            id="telephone"
+            pattern="([0-9]{3})-[0-9]{3}-[0-9]{4}"
+            placeholder="(000)-000-0000"
+          /><br />
+          <input type="text" id="comment" placeholder="Commentaire" /><br />
+          <input type="submit" value="Submit" />
         </div>
       </div>
     </main>

@@ -13,6 +13,8 @@
 
     <title>Portfolio Web de Leila Dufour</title>
   </head>
+
+  <!-- Impossible pour moi de Jquery car il brise le layout de mon site web.-->
   <body>
     <header>
       <div class="title">
@@ -24,7 +26,8 @@
       <div class="contact">
         <ul>
           <li>
-            <a href="#" target="_blank" class="fa fa-linkedin"></a> @leiduf
+            <a href="#" target="_blank" class="fa fa-linkedin"></a>
+            @leiduf
           </li>
           <li>
             <a
@@ -49,7 +52,7 @@
 
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a class="active-page" href="index.html">Accueil</a></li>
         <li><a href="aboutme.html">À propos de moi</a></li>
         <li><a href="projects.html">Mes projets</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -81,4 +84,23 @@
       <p>© 2023 Leila Dufour. All rights reserved.</p>
     </footer>
   </body>
+  <script>
+    // Select the hamburger menu button and the menu itself
+    const hamburger = document.querySelector(".hamburger");
+    const menu = document.querySelector(".hamburger-menu");
+
+    // Add an event listener to the hamburger button
+    hamburger.addEventListener("click", () => {
+      // Toggle the "hidden" class on the menu
+      menu.classList.toggle("hidden");
+
+      // Toggle the "blurred" class on the body to create a blurred background effect
+      document.body.classList.toggle("blurred");
+
+      // Disable scrolling on the body when the menu is open
+      document.body.style.overflowY = menu.classList.contains("hidden")
+        ? "scroll"
+        : "hidden";
+    });
+  </script>
 </html>
