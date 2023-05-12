@@ -48,6 +48,7 @@
 
 /*GÉNÉRAL*/
 body {
+  color-scheme: only normal;
   margin: 0;
   display: grid;
   grid-template-areas:
@@ -527,7 +528,7 @@ footer > hr {
   :root {
     --title-size: 1.5rem;
     --subtitle-size: 1.2rem;
-    --text-size: 0.8rem;
+    --text-size: 0.8vw;
     --nav-size: 0.8rem;
     --icon-size: 2rem;
     --contact-text-size: 1.5rem;
