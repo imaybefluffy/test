@@ -17,7 +17,7 @@
 
   --title-size: 1.7rem;
   --subtitle-size: 1.5rem;
-  --text-size: 0.5rem;
+  --text-size: 1rem;
   --nav-size: 1rem;
   --icon-size: 2rem;
   --contact-text-size: 1.5rem;
@@ -64,6 +64,7 @@ body {
 }
 
 p {
+  font-size: var(--text-size);
   font-family: var(--text-font);
   font-weight: var(--text-weight);
 }
@@ -331,6 +332,7 @@ main > div {
 /*CONTACT PAGE*/
 
 input {
+  font-size: var(--text-size);
   text-align: center;
   margin: 0.5rem;
   height: 3.5vh;
@@ -473,8 +475,8 @@ footer > hr {
   }
 
   .contact {
-    width: 100%;
     display: flex;
+    height: 100%;
   }
 
   .contact > ul {
@@ -522,8 +524,42 @@ footer > hr {
 }
 
 @media screen and (max-width: 1100px) {
+  :root {
+    --title-size: 1.5rem;
+    --subtitle-size: 1.2rem;
+    --text-size: 0.8rem;
+    --nav-size: 0.8rem;
+    --icon-size: 2rem;
+    --contact-text-size: 1.5rem;
+
+    --h-weight: 650;
+    --text-weight: 400;
+  }
+
   header {
     display: none;
+  }
+
+  .title {
+    height: fit-content;
+  }
+
+  .title > div {
+    flex-wrap: wrap;
+  }
+
+  .contact > ul {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact > ul > li {
+    width: fit-content;
+  }
+
+  nav > ul > li {
+    width: 25%;
   }
 
   .blurred {
@@ -569,8 +605,24 @@ footer > hr {
     z-index: 2;
     background-color: #00000054;
   }
-}
 
+  main > div {
+    width: 70%;
+    padding: 10%;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .column-text {
+    margin: 0;
+  }
+
+  .column-text > h1 {
+    text-align: center;
+  }
+}
 /* * {
   outline: 1px solid red;
   outline-offset: -1px;
