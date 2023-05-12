@@ -448,8 +448,8 @@ footer > hr {
   );
 }
 
-.fa-github {
-  background: #333;
+.hamburger {
+  display: none;
 }
 
 /*RESPONSIVE*/
@@ -545,10 +545,12 @@ footer > hr {
   }
 
   .hamburger {
+    display: block;
     position: absolute;
     background-color: var(--main-turquoise);
     color: var(--off-white-color);
-    right: 0;
+    right: 0.5rem;
+    top: 0.5rem;
     width: 3rem;
     height: 3rem;
     z-index: 9998;
