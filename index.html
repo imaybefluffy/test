@@ -16,7 +16,7 @@
 
   <!-- Impossible pour moi de Jquery car il brise le layout de mon site web.-->
   <body>
-    <header>
+    <header id="header">
       <div class="title">
         <div>
           <img src="/images/lei0.png" alt="Dessin de Leila" />
@@ -61,6 +61,7 @@
         <li><a href="../pages/contact.html">Contact</a></li>
       </ul>
     </nav>
+    <button class="hamburger fa fa-bars" onclick="hamburger()"></button>
 
     <main>
       <div>
@@ -87,23 +88,5 @@
       <p>© 2023 Leila Dufour. All rights reserved.</p>
     </footer>
   </body>
-  <script>
-    // Select the hamburger menu button and the menu itself
-    const hamburger = document.querySelector(".hamburger");
-    const menu = document.querySelector(".hamburger-menu");
-
-    // Add an event listener to the hamburger button
-    hamburger.addEventListener("click", () => {
-      // Toggle the "hidden" class on the menu
-      menu.classList.toggle("hidden");
-
-      // Toggle the "blurred" class on the body to create a blurred background effect
-      document.body.classList.toggle("blurred");
-
-      // Disable scrolling on the body when the menu is open
-      document.body.style.overflowY = menu.classList.contains("hidden")
-        ? "scroll"
-        : "hidden";
-    });
-  </script>
+  <script src="../script/main.js"></script>
 </html>

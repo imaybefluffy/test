@@ -541,20 +541,31 @@ footer > hr {
 
   .hidden {
     transform: translateX(-100%);
+    display: none;
   }
 
   .hamburger {
-    position: fixed;
+    position: absolute;
+    background-color: var(--main-turquoise);
+    color: var(--off-white-color);
     right: 0;
-    height: 10vh;
+    width: 3rem;
+    height: 3rem;
     z-index: 9998;
   }
 
-  .hamburger-menu {
-    z-index: 2;
+  .ease-animation {
+    transition: background-color 1s ease;
   }
-  .hamburger-menu > div {
+
+  .hamburger-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     width: 100%;
+    z-index: 2;
+    background-color: #00000054;
   }
 }
 
