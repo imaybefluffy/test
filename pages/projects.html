@@ -14,7 +14,7 @@
     <title>Portfolio Web de Leila Dufour</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <div class="title">
         <div>
           <img src="../images/lei0.png" alt="Dessin de Leila" />
@@ -58,6 +58,9 @@
 
     <nav>
       <ul>
+        <li class="hamburger" id="hamburger">
+          <button class="fa fa-bars" onclick="hamburger()"></button>
+        </li>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="aboutme.html">À propos de moi</a></li>
         <li><a class="active-page" href="projects.html">Mes projets</a></li>
@@ -128,4 +131,5 @@
       <p>© 2023 Leila Dufour. All rights reserved.</p>
     </footer>
   </body>
+  <script src="../script/main.js"></script>
 </html>

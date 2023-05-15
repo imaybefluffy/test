@@ -1,12 +1,12 @@
 function hamburger() {
   var header = document.getElementById("header");
-  var nav = document.getElementById("nav");
-  var main = document.getElementById("main");
-  var footer = document.getElementById("footer");
+  var hamburger = document.getElementById("hamburger");
 
   if (header.classList.contains("hamburger-menu")) {
     header.classList.remove("hamburger-menu");
+    hamburger.classList.remove("borderless");
   } else {
     header.classList.add("hamburger-menu");
+    hamburger.classList.add("borderless");
   }
 }
