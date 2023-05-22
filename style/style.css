@@ -283,8 +283,6 @@ main > div {
   border-radius: 1rem;
   color: var(--light-color-bg);
 
-  width: 50%;
-
   border-color: var(--light-lavender);
   border-style: solid;
   border-width: 0 0.4rem;
@@ -607,13 +605,12 @@ footer > hr {
     background-color: #00000054;
   }
 
-  .box > div {
-    width: 77%;
+  main > div {
+    padding: 10%;
   }
 
-  main > div {
-    width: 77%;
-    padding: 10%;
+  .box > div {
+    width: calc(100vw - 20% - 0.7rem);
   }
 
   .row {
