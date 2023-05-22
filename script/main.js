@@ -1,12 +1,25 @@
-function hamburger() {
-  var header = document.getElementById("header");
-  var hamburger = document.getElementById("hamburger");
+var header = document.getElementById("header");
+var contactButton = document.getElementById("contact");
+var contactIcon = document.getElementById("contact-icon");
 
-  if (header.classList.contains("hamburger-menu")) {
-    header.classList.remove("hamburger-menu");
-    hamburger.classList.remove("borderless");
+function contact() {
+  if (header.classList.contains("contact-info-menu")) {
+    contactDisappear();
   } else {
-    header.classList.add("hamburger-menu");
-    hamburger.classList.add("borderless");
+    contactAppear();
   }
+}
+
+function contactDisappear() {
+  header.classList.remove("contact-info-menu");
+  contactButton.classList.remove("borderless");
+  contactIcon.classList.add("fa-address-card-o");
+  contactIcon.classList.remove("fa-close");
+}
+
+function contactAppear() {
+  header.classList.add("contact-info-menu");
+  contactButton.classList.add("borderless");
+  contactIcon.classList.remove("fa-address-card-o");
+  contactIcon.classList.add("fa-close");
 }

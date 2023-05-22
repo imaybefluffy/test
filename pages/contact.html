@@ -11,14 +11,40 @@
     />
     <link rel="stylesheet" href="../style/style.css" />
 
-    <title>Portfolio Web de Leila Dufour</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>LeiDuf</title>
   </head>
   <body>
     <header id="header">
       <div class="title">
         <div>
           <img src="../images/lei0.png" alt="Dessin de Leila" />
-          <h2>Ingénieur en logiciels</h2>
+          <h1>Ingénieur logiciel</h1>
         </div>
       </div>
       <div class="contact">
@@ -58,8 +84,12 @@
 
     <nav>
       <ul>
-        <li class="hamburger" id="hamburger">
-          <button class="fa fa-bars" onclick="hamburger()"></button>
+        <li class="contact-info" id="contact">
+          <button
+            class="fa fa-address-card-o"
+            onclick="contact()"
+            id="contact-icon"
+          ></button>
         </li>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="aboutme.html">À propos de moi</a></li>
@@ -71,7 +101,7 @@
     <main>
       <div>
         <div>
-          <h2>Contactez-moi</h2>
+          <h1>Contactez-moi</h1>
           <input type="text" id="surname" placeholder="Prénom" />
           <input type="text" id="name" placeholder="Nom de famille" />
           <input type="email" id="email" placeholder="Adresse email" />

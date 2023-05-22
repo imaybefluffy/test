@@ -11,14 +11,40 @@
     />
     <link rel="stylesheet" href="../style/style.css" />
 
-    <title>Portfolio Web de Leila Dufour</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>LeiDuf</title>
   </head>
   <body>
     <header id="header">
       <div class="title">
         <div>
           <img src="../images/lei0.png" alt="Dessin de Leila" />
-          <h2>Ingénieur en logiciels</h2>
+          <h1>Ingénieur logiciel</h1>
         </div>
       </div>
       <div class="contact">
@@ -58,8 +84,12 @@
 
     <nav>
       <ul>
-        <li class="hamburger" id="hamburger">
-          <button class="fa fa-bars" onclick="hamburger()"></button>
+        <li class="contact-info" id="contact">
+          <button
+            class="fa fa-address-card-o"
+            onclick="contact()"
+            id="contact-icon"
+          ></button>
         </li>
         <li><a href="../index.html">Accueil</a></li>
         <li><a href="aboutme.html">À propos de moi</a></li>
@@ -68,9 +98,9 @@
       </ul>
     </nav>
 
-    <main class="box">
+    <main class="box projects">
       <div class="box-top">
-        <h2>Projets</h2>
+        <h1>Programmation</h1>
 
         <div class="row">
           <div>
@@ -78,7 +108,10 @@
           </div>
 
           <div class="column-text">
-            <h1>Projet 1</h1>
+            <h2>Projet 1 ✦ Simon dit</h2>
+            <ul class="bullet-list">
+              <li>C++.</li>
+            </ul>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
               accusantium inventore nisi molestias enim facilis harum doloribus
@@ -96,12 +129,15 @@
           </div>
 
           <div class="column-text">
-            <h1>Projet 2</h1>
+            <h2>Projet 2 ✦ Visual Novel</h2>
+            <ul class="bullet-list">
+              <li>Python avec Ren'Py</li>
+            </ul>
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-              accusantium inventore nisi molestias enim facilis harum doloribus
-              perferendis! Aperiam, similique. Adipisci ipsam nesciunt iste
-              tempore quisquam placeat ex dolor. Quis.
+              (mettre lien itch) Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Itaque accusantium inventore nisi molestias enim
+              facilis harum doloribus perferendis! Aperiam, similique. Adipisci
+              ipsam nesciunt iste tempore quisquam placeat ex dolor. Quis.
             </p>
           </div>
         </div>
@@ -114,7 +150,74 @@
           </div>
 
           <div class="column-text">
-            <h1>Projet 3</h1>
+            <h2>Projet 3 ✦ Roche, papier, ciseaux</h2>
+            <ul class="bullet-list">
+              <li>C++.</li>
+            </ul>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
+              accusantium inventore nisi molestias enim facilis harum doloribus
+              perferendis! Aperiam, similique. Adipisci ipsam nesciunt iste
+              tempore quisquam placeat ex dolor. Quis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-top">
+        <h1>Art</h1>
+
+        <div class="row">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
+          </div>
+
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
+          </div>
+
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
+          </div>
+
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
+          </div>
+        </div>
+      </div>
+
+      <div class="box-middle">
+        <div class="row">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
+          </div>
+
+          <div class="column-text">
+            <h2>Projet 2 ✦ Visual Novel</h2>
+            <ul class="bullet-list">
+              <li>Python avec Ren'Py</li>
+            </ul>
+            <p>
+              (mettre lien itch) Lorem ipsum dolor, sit amet consectetur
+              adipisicing elit. Itaque accusantium inventore nisi molestias enim
+              facilis harum doloribus perferendis! Aperiam, similique. Adipisci
+              ipsam nesciunt iste tempore quisquam placeat ex dolor. Quis.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-bottom">
+        <div class="row">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
+          </div>
+
+          <div class="column-text">
+            <h2>Projet 3 ✦ Roche, papier, ciseaux</h2>
+            <ul class="bullet-list">
+              <li>C++.</li>
+            </ul>
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
               accusantium inventore nisi molestias enim facilis harum doloribus

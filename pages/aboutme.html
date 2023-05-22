@@ -11,14 +11,40 @@
     />
     <link rel="stylesheet" href="../style/style.css" />
 
-    <title>Portfolio Web de Leila Dufour</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="../favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="../favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>LeiDuf</title>
   </head>
   <body>
     <header id="header">
       <div class="title">
         <div>
           <img src="../images/lei0.png" alt="Dessin de Leila" />
-          <h2>Ingénieur en logiciels</h2>
+          <h1>Ingénieur logiciel</h1>
         </div>
       </div>
       <div class="contact">
@@ -58,8 +84,12 @@
 
     <nav>
       <ul>
-        <li class="hamburger" id="hamburger">
-          <button class="fa fa-bars" onclick="hamburger()"></button>
+        <li class="contact-info" id="contact">
+          <button
+            class="fa fa-address-card-o"
+            onclick="contact()"
+            id="contact-icon"
+          ></button>
         </li>
         <li><a href="../index.html">Accueil</a></li>
         <li><a class="active-page" href="aboutme.html">À propos de moi</a></li>
@@ -70,29 +100,105 @@
 
     <main class="box">
       <div class="box-top">
-        <h2>À propos de moi</h2>
+        <h1>À propos de moi</h1>
         <div>
           <img src="https://via.placeholder.com/150" alt="Photo de Leila" />
-          <h1>Titre professionnel</h1>
+          <h2>Ingénieur logiciel</h2>
         </div>
       </div>
       <div class="box-middle">
-        <h1>Compétences professionnelles</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-          accusantium inventore nisi molestias enim facilis harum doloribus
-          perferendis! Aperiam, similique. Adipisci ipsam nesciunt iste tempore
-          quisquam placeat ex dolor. Quis.
-        </p>
+        <h2>Compétences professionnelles</h2>
+
+        <div class="row">
+          <div class="column-text">
+            <h2>Informatique...</h2>
+            <ul class="bullet-list">
+              <li>C++;</li>
+              <li>HTML/CSS;</li>
+            </ul>
+            <p>
+              En classe, j'ai pu étudier ces langages, ce sont ceux avec
+              lesquels je suis le plus confiant.
+            </p>
+            <ul class="bullet-list">
+              <li>TypeScript;</li>
+            </ul>
+            <p>
+              Je suis plus rouillé avec le TypeScript, je ne l'ai utilisé que
+              lors de mes premiers mois de cours.
+            </p>
+            <ul class="bullet-list">
+              <li>JavaScript (html+node.js);</li>
+              <li>Python (Ren'Py).</li>
+            </ul>
+            <p>
+              Ce sont des langages que j'ai appris par l'entremise de projets
+              personnels.
+            </p>
+          </div>
+
+          <div class="column-text">
+            <h2>Linguistiques...</h2>
+            <p>
+              Sur le côté, j'aime bien apprendre des langues pour le plaisir.
+              J'aimerais un jour voyager, alors j'espère que ces connaissances
+              se sauront utiles.
+            </p>
+            <ul class="bullet-list">
+              <li>
+                Français;
+                <p>Langue maternelle</p>
+              </li>
+              <li>
+                English;
+                <p>
+                  I consider myself somewhat fluent, I learned through school
+                  and thanks to the Internet.
+                </p>
+              </li>
+              <li>
+                Arabia (darija);
+                <p>
+                  Ana mghrabia, taelamt nafsi mundo andi 13 sana, la ataqalemou
+                  arabia bitalaqa.
+                </p>
+              </li>
+              <li>
+                Español;
+                <p>
+                  No soy fluido, pero aprendí con la escuela y el internet
+                  durante 2 años
+                </p>
+              </li>
+              <li>
+                日本語.
+                <p>ペラペラじゃない、でもがんばります!</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div class="column-text">
+              <h2>Art...</h2>
+              <p>
+                Je fais du dessin digital depuis un assez jeune âge et j'ai
+                toujours adoré ça. Sur le côté, je continue d'en apprendre sur
+                l'animation 2D et sur l'illustration. J'ai de l'expérience avec
+                le concept design et je me concentre principalement sur les
+                personnages, j'ai quand même quelques connaissances en
+                illustration de la nature et d'apocalyptique/post-apocalyptique.
+              </p>
+            </div>
+            <div>
+              <img
+                src="https://cdn.discordapp.com/attachments/751262211170893845/1101028081885515786/image.png"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="box-bottom">
-        <h1>Mon parcours</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque
-          accusantium inventore nisi molestias enim facilis harum doloribus
-          perferendis! Aperiam, similique. Adipisci ipsam nesciunt iste tempore
-          quisquam placeat ex dolor. Quis.
-        </p>
+        <h2>Mon parcours</h2>
+        <p class="justify">Explosion</p>
       </div>
     </main>
 

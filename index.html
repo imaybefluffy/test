@@ -11,7 +11,33 @@
     />
     <link rel="stylesheet" href="style/style.css" />
 
-    <title>Portfolio Web de Leila Dufour</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title>LeiDuf</title>
   </head>
 
   <!-- Impossible pour moi de Jquery car il brise le layout de mon site web.-->
@@ -20,7 +46,7 @@
       <div class="title">
         <div>
           <img src="images/lei0.png" alt="Dessin de Leila" />
-          <h2>Ingénieur en logiciels</h2>
+          <h1>Ingénieur logiciel</h1>
         </div>
       </div>
       <div class="contact">
@@ -60,8 +86,12 @@
 
     <nav>
       <ul>
-        <li class="hamburger" id="hamburger">
-          <button class="fa fa-bars" onclick="hamburger()"></button>
+        <li class="contact-info" id="contact">
+          <button
+            class="fa fa-address-card-o"
+            onclick="contact()"
+            id="contact-icon"
+          ></button>
         </li>
         <li><a class="active-page" href="index.html">Accueil</a></li>
         <li><a href="pages/aboutme.html">À propos de moi</a></li>
@@ -73,18 +103,19 @@
     <main>
       <div>
         <div>
-          <h2>Hello World!</h2>
+          <h1>Hello World!</h1>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-            delectus porro aut, itaque odit eius autem architecto esse, tenetur
-            qui dolores saepe officia illum veniam. Vel accusantium laborum
-            repellendus eius! Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Dicta inventore quia a ratione alias quam, aperiam sed aliquam
-            enim veniam mollitia ad debitis recusandae cupiditate. Aliquid
-            veniam libero est similique?Lorem ipsum dolor sit amet, consectetur
-            adipisicing elit. Fuga dolore in recusandae ips a totam eaque modi
-            eum odit, velit maxime saepe numquam, dolorem accusantium cupiditate
-            repudiandae. Non vel asperiores beatae!
+            Bienvenue sur mon portfolio web.<br />
+            Je suis passioné d'informatique, d'art et de linguistiques.
+          </p>
+          <p>
+            Des langages de programmation que je maîtrise le mieux à ceux que je
+            maîtrise le moins:
+          </p>
+          <h2>C++, HTML/CSS, TypeScript, JavaScript(html + node.js), Python</h2>
+          <p>
+            J'ai encore beaucoup à apprendre, alors j'espère que vous m'offrirez
+            cette opportunité !
           </p>
         </div>
       </div>
