@@ -416,10 +416,6 @@ footer {
   text-align: center;
 }
 
-footer > hr {
-  background-color: var(--main-turquoise);
-}
-
 /*ICONES*/
 .fa {
   width: var(--icon-size);
