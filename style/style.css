@@ -98,6 +98,15 @@ img {
   max-height: 100%;
   max-width: 100%;
 }
+
+hr {
+  background-color: var(--main-turquoise);
+  height: 0.25rem;
+  border-radius: 2rem;
+  border-style: none;
+  margin: 1.25rem;
+}
+
 /*SECTION GAUCHE DU SITE*/
 header {
   grid-area: header;
@@ -176,13 +185,11 @@ header > div > div {
   flex-direction: column;
   justify-content: space-evenly;
   margin: 0 1rem 0 1rem;
-  width: 100%;
 }
 
 .contact > ul > li {
   display: flex;
   gap: 1.5rem;
-  width: 100%;
   margin: 0 0.5rem 0 0.5rem;
 }
 
